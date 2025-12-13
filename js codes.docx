@@ -3857,6 +3857,64 @@ function fibonacciWithMemoization(n, memo = {}) {
 // Example usage
 const result = fibonacciWithMemoization(5);
 console.log(result); // Output: 5
+-----------------------------------------------------------------------------------------------
+Javascript Coding Practices:
+1. Combine 2 strings alternetively
+
+function combineTwoStringsAlternatively(str1, str2) {
+  let i = 0;
+  let result = "";
+
+  while (i < str1.length || i < str2.length) {
+    if (i < str1.length) {
+      result += str1[i];
+    }
+    if (i < str2.length) {
+      result += str2[i];
+    }
+    i++;
+  }
+
+  return result;
+}
+
+function combineTwoStringsAlternatively(str1, str2) {
+  let len1 = str1.length;
+  let len2 = str2.length;
+  let maxLen = Math.max(len1, len2);
+  let result = "";
+
+  for (let i = 0; i < maxLen; i++) {
+    if (str1[i]) result += str1[i];
+    if (str2[i]) result += str2[i];
+  }
+
+  return result;
+}
+
+const str1 = "priya";
+const str2 = "bagde";
+
+console.log(combineTwoStringsAlternatively(str1, str2));
+------------------------
+2. Find the longest word:
+const longestWordInString =(str)=>{
+  let arr= str.split(" "); //[ 'My', 'name', 'is', 'Priya' ]
+  let maxWord="";
+  for(let i=0; i<arr.length; i++){
+      if(arr[i].length>maxWord.length){
+        maxWord=arr[i];
+      }
+  }
+  return maxWord;
+  /*return str.split(" ").reduce((a,b)=>b.length>a.length? b : a, "")*/
+}
+
+const str="My name is Priya"
+longestWordInString(str)
+-------------------------
+3.
+
 
 
 
