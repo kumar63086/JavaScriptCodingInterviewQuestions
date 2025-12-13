@@ -3919,6 +3919,35 @@ Ans: Type coercion happens in both cases, but in different directions:
 3 + '2' → number 3 is coerced to a string, result "32"
 👉 So coercion occurs in both, but the operator (- vs +) decides how it happens.
 --------------------------
+4. Flattened Array with nested
+const flatArr1=(arr)=>{
+  let result = [];
+  for(let i=0; i<arr.length; i++){
+    if(Array.isArray(arr[i])){
+      //result=[...result, ...arr[i]]; //push //concat //only 2 level     
+      result=[...result, ...flatArr(arr[i])] //nested n level
+    }else{
+      result=[...result, arr[i]]
+    }
+  }
+  return result;
+}
+
+const flatArr = (arr) =>{
+ return arr.reduce((acc, currItem)=> 
+                        Array.isArray(currItem)
+                        ? acc.concat(flatArr(currItem))
+                        : acc.concat(currItem)
+                        , []);
+}
+
+const arr = [[1,2],[3,4],[5,6],[7,8],9,[1,2,[3,[4]]]];
+flatArr(arr);
+---------------------------
+5.
+---------------------------
+6.
+
 
 
 
