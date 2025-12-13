@@ -3944,9 +3944,28 @@ const flatArr = (arr) =>{
 const arr = [[1,2],[3,4],[5,6],[7,8],9,[1,2,[3,[4]]]];
 flatArr(arr);
 ---------------------------
-5.
+5. Infinite Currying: 
+Currying converts a multi-argument function into a series of single-argument functions.
+
+const infiniteAddCurrying1 = (a) =>{
+   return function (b){
+     return function (c) {
+       return a+b+c;
+     }
+   }
+}
+
+const infiniteAddCurrying = (a) =>{
+  return function (b){
+    if(b === undefined) return a; //breakpoint
+    return infiniteAddCurrying(a+b);
+  }
+}
+
+infiniteAddCurrying(2)(3)(4)()
 ---------------------------
 6.
+
 
 
 
