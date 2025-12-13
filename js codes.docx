@@ -3913,7 +3913,13 @@ const longestWordInString =(str)=>{
 const str="My name is Priya"
 longestWordInString(str)
 -------------------------
-3.
+3. console.log(3-'2'); console.log(3+'2');
+Ans: Type coercion happens in both cases, but in different directions:
+3 - '2' → string '2' is coerced to a number, result 1
+3 + '2' → number 3 is coerced to a string, result "32"
+👉 So coercion occurs in both, but the operator (- vs +) decides how it happens.
+--------------------------
+
 
 
 
