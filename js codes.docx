@@ -3977,6 +3977,23 @@ clearInterval is used for Stops a running setInterval.
 Why Promise executes before setTimeout? and ✔ Microtask queue has higher priority
 ----------------------------
 7. Find duplicates:
+const arr = [1,2,3,4,1,2]
+let result = [];
+const findDuplicates =()=>{
+  for(let i=0; i<arr.length; i++){
+    if(i != arr.indexOf(arr[i])){
+      result.push(arr[i])
+    }
+  }
+  return result;
+}
+
+console.log(findDuplicates(arr))
+---------------------------
+8. Server side javascript vs client side javascript:
+
+
+
 
 
 
