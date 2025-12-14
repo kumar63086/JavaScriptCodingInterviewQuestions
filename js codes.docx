@@ -3992,6 +3992,11 @@ console.log(findDuplicates(arr))
 ---------------------------
 8. Server side javascript vs client side javascript:
 
+Client-side JavaScript runs in the browser and handles UI and user interactions, while server-side JavaScript runs on the server using Node.js and handles business logic, database operations, and security.
+--------------------------
+9.
+
+
 
 
 
