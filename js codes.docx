@@ -3994,7 +3994,56 @@ console.log(findDuplicates(arr))
 
 Client-side JavaScript runs in the browser and handles UI and user interactions, while server-side JavaScript runs on the server using Node.js and handles business logic, database operations, and security.
 --------------------------
-9.
+9. Object destructuring is a JavaScript feature that allows you to extract values from an object and store them into variables using a short syntax.
+
+📌 Nested Object Destructuring
+
+const user = {
+  name: "Priya",
+  address: {
+    city: "Pune",
+    country: "India"
+  }
+};
+
+const {
+  address: { city, country }
+} = user;
+
+console.log(city); // Pune
+----------------------------
+10. “JavaScript is dynamically or statically typed, but is it strongly typed or weakly typed?
+
+----------------------------
+11. Type of pop-up boxes?
+alert(), prompt(), confirm()
+
+----------------------------
+12. local storage vs session storage
+
+---------------------------
+13. Shift, unshift, pusp, pop, slice, splice
+
+--------------------------
+14. Types of errors:
+
+--------------------------
+15. Convert an object into an array 
+
+--------------------------
+16. Javascript libraries and framework ?
+
+---------------------------
+17. Synchronous and Asynchronous programming
+
+----------------------------
+18. Promises or Async/await. which is better ?
+
+----------------------------
+19. What are the different events in javascript and categories them.
+
+----------------------------
+20. 
 
 
 
