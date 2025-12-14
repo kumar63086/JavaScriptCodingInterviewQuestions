@@ -3964,7 +3964,22 @@ const infiniteAddCurrying = (a) =>{
 
 infiniteAddCurrying(2)(3)(4)()
 ---------------------------
-6.
+6. setTimeout and setInterval:
+
+setTimeout executes the function "once" after the soecified delay(in ms).
+It's a part of Web API browser, not javascript.
+It doesn't block the main thread.
+Callback function goes to task queue and then event loop pushes into the call stack wen stack is empty.
+setTimeout returns a timer ID and that ID is required to cancel it with clearTimeout.
+
+setInterval executes a function repeatedly after a fixed delay.
+clearInterval is used for Stops a running setInterval.
+Why Promise executes before setTimeout? and ✔ Microtask queue has higher priority
+----------------------------
+7. Find duplicates:
+
+
+
 
 
 
