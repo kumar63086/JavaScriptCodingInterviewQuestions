@@ -4021,11 +4021,11 @@ Strongly Typed Language means where NOT automatically convert one data type into
 Implicit conversion happens automatically by JavaScript, while explicit conversion is done manually by the developer using conversion functions.
 Explicit conversion: Number("5") + 1 //6
 Implicit conversion: "5" + 1 //51
-
 ----------------------------
 11. Type of pop-up boxes?
-alert(), prompt(), confirm()
-
+alert(): To show a message to the user and have OK button
+prompt(): To ask for the confirmation and have OK and CANCEL button
+confirm(): To take the input from an user and have OK, CANCEL AND INPUT.
 ----------------------------
 12. local storage vs session storage
 
@@ -4052,6 +4052,7 @@ alert(), prompt(), confirm()
 
 ----------------------------
 20. 
+
 
 
 
