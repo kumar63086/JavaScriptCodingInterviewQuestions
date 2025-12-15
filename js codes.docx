@@ -4013,6 +4013,14 @@ const {
 console.log(city); // Pune
 ----------------------------
 10. “JavaScript is dynamically or statically typed, but is it strongly typed or weakly typed?
+JavaScript is:
+👉 Dynamically typed means where we "can't declare the data type". The data type id decided at "RUNTIME", not at compile time.
+👉 Weakly typed (loosely typed) means where it automatically converts types when needed called as "type coercion". 
+Strongly Typed Language means where NOT automatically convert one data type into another and must explicitly convert types
+
+Implicit conversion happens automatically by JavaScript, while explicit conversion is done manually by the developer using conversion functions.
+Explicit conversion: Number("5") + 1 //6
+Implicit conversion: "5" + 1 //51
 
 ----------------------------
 11. Type of pop-up boxes?
@@ -4044,6 +4052,7 @@ alert(), prompt(), confirm()
 
 ----------------------------
 20. 
+
 
 
 
