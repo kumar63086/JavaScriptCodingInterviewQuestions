@@ -4028,30 +4028,81 @@ prompt(): To ask for the confirmation and have OK and CANCEL button
 confirm(): To take the input from an user and have OK, CANCEL AND INPUT.
 ----------------------------
 12. local storage vs session storage
-
+Local storage persists data permanently until manually deleted, while session storage keeps data only for the current tab session.
 ---------------------------
-13. Shift, unshift, pusp, pop, slice, splice
+13. Shift, unshift, push, pop, slice, splice
+Shift() is used for removing the first element and Unshift() is used for adding at the first element. 
+slice() is used to extract elements without modifying the array. Is has parameter with start index and end where end is not considerable.
 
+while splice() is used to add, remove, or replace elements by modifying the original array. It has parameter with start index, delete count, item1...
+It returned the removed elements.
 --------------------------
 14. Types of errors:
-
+Syntax: Caused by incorrect JavaScript syntax.
+Runtime: Occur while the program is running.
+Logical: When unexpected result give
 --------------------------
 15. Convert an object into an array 
+We can convert an object into an array using Object.keys(), Object.values(), or Object.entries() depending on the requirement.
+const entries = Object.entries(user);
 
+console.log(entries);
+// [
+//   ["name", "Priya"],
+//   ["age", 30],
+//   ["role", "Frontend"]
+// ]
+
+Convert Object to Custom Array Format
+Example: Array of objects
+const arr = Object.entries(user).map(([key, value]) => ({
+  key,
+  value
+}));
+
+console.log(arr);
+/*
+[
+  { key: "name", value: "Priya" },
+  { key: "age", value: 30 },
+  { key: "role", value: "Frontend" }
+]
+*/
+
+
+Also, using older way of for...in
+const result = [];
+for (let key in user) {
+  result.push([key, user[key]]);
+}
+console.log(result);
 --------------------------
 16. Javascript libraries and framework ?
-
+Library: React, jquery
+Framework: Angular, Vue
 ---------------------------
 17. Synchronous and Asynchronous programming
-
+Synchronous code blocks execution until a task finishes, while asynchronous code allows other tasks to run without waiting.
 ----------------------------
 18. Promises or Async/await. which is better ?
-
+async/await is syntactic sugar(easy way of writing Promises) over Promises—it makes asynchronous code look synchronous for better readability and easier error handling.
+Internally, an async function always returns a Promise, and await pauses only that function until the Promise resolves, without blocking the main thread.
 ----------------------------
 19. What are the different events in javascript and categories them.
+Category	Examples
+UI Events	load, resize, scroll
+Mouse Events	click, dblclick, mouseover, mouseout
+Keyboard Events	keydown, keyup, keypress
+Form Events	submit, change, input, focus, blur
+Touch Events	touchstart, touchmove, touchend
+Drag & Drop	drag, dragstart, dragend, drop
+Clipboard	copy, cut, paste
+Media	play, pause, ended, volumechange
+Animation/Transition	animationstart, transitionend
 
 ----------------------------
 20. 
+
 
 
 
