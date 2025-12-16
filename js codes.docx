@@ -4212,27 +4212,92 @@ Ans:
 ----------------------------
 43. Array methods used
 ----------------------------
-44. 
-----------------------------
-45.
-----------------------------
-46.
-----------------------------
-47.
-----------------------------
-48.
-----------------------------
-49.
-----------------------------
-50.
-----------------------------
+44. Examples of setTimeout and setInterval:
 
 ----------------------------
-
+45. Which will execute first setTimeout or Promises
 ----------------------------
-
+46. Event Loop ?
 ----------------------------
-
+47. Shallow vd Deep Copy
+----------------------------
+48. Reactjs file structure
+----------------------------
+49. NPM ? App.js ? index.html ?
+----------------------------
+50. Stateless vs stateful component
+----------------------------
+51. super keyword
+----------------------------
+52. useState hook is synchronous or asynchronous ?
+----------------------------
+53. useState vs useReducer
+----------------------------
+54. How do u handle input fields in controlled form.
+----------------------------
+55. How do we implement Routing in Reactjs.
+----------------------------
+56. code splitting? lazy loading ?
+----------------------------
+57. optimise react applications
+----------------------------
+58. fetch vs axios
+----------------------------
+59. virtual vs real dom 
+----------------------------
+60. How do you load dynamically the css files with code spliting. 
+----------------------------
+61. Multi part form data in HTML 	
+----------------------------
+62. cellpadding vs cellspacing
+----------------------------
+63. HTML vs xHTML
+----------------------------
+64. Microstorage
+----------------------------
+65. Web worker
+----------------------------
+66. how to add multiple columns and rows
+----------------------------
+67. What's header tag and body tag
+----------------------------
+68. Types of List: Ordered and Unordered
+----------------------------
+69. How can we do nesting of web pages.
+<iframe> tag
+----------------------------
+70. how many ways to dispay the HTML elements
+----------------------------
+71.Positions of css
+----------------------------
+72. Markque tag, empty elements
+----------------------------
+73. layout of html
+----------------------------
+74. grid vs flexbox
+----------------------------
+75. specificity
+----------------------------
+76. selectors
+----------------------------
+77. format text in css
+----------------------------
+78.css border and outline
+----------------------------
+79. css float
+----------------------------
+80. gradient in css
+----------------------------
+81. zindex, overlapping
+----------------------------
+82. css box
+----------------------------
+83.
+----------------------------
+84.
+----------------------------
+85.
+----------------------------
 
 
 
