@@ -4101,7 +4101,137 @@ Media	play, pause, ended, volumechange
 Animation/Transition	animationstart, transitionend
 
 ----------------------------
-20. 
+20. console.log(1+'1'+1);
+Ans: 111 because of implicit type coercion where number converted into the string and string concatenation would happen.
+----------------------------
+21. console.log(1+1-'1');
+Ans: 1 // 1+1 become 2 and then due to the the implicit type coercion string would convert into the number. 2-1 become 1.
+----------------------------
+22. let x={}, y={name:"Priya"}, z={name:"Supriya"}
+x[y]={name:"piya"}
+x[z]={name:"jiya"}
+console.log(x[y]);
+
+
+{ name: "jiya" }
+Why does this happen?
+
+In JavaScript, object keys can only be "strings or symbols". When you use an object as a key: JavaScript implicitly converts the object key to a string using toString().
+
+So both y and z become:
+"[object Object]"
+What actually happens internally:
+
+x["[object Object]"] = { name: "piya" };
+x["[object Object]"] = { name: "jiya" }; // overwrites previous value
+Since both keys are the same string, the second assignment overwrites the first one.
+
+That’s why:
+console.log(x[y]); // { name: "jiya" }
+Key takeaway:
+Never use plain objects as keys in another object.
+----------------------------
+23. console.log(NaN===NaN)
+NaN is not equal to anything — not even itself.
+So:
+NaN === NaN → false
+NaN == NaN → false
+
+How to correctly check for NaN
+Number.isNaN(NaN);   // true
+----------------------------
+24. console.log(1<2<3);
+Ans: true
+JavaScript evaluates the expression from left to right.
+1 < 2 → true
+true < 3 → 1 < 3
+(true is implicitly converted to 1)
+1 < 3 → true
+----------------------------
+25. Function Currying
+
+----------------------------
+26. Higher order function
+
+----------------------------
+27. Turnarory operator( ? : )
+
+----------------------------
+28. for(var i=0; i<3; i++){
+      setTimeout(()=>cosnole.log(i), 2000);
+    }
+Ans: 
+Output (after ~2 seconds):
+3
+3
+3
+
+Why does this happen?
+var is function-scoped, not block-scoped.
+There is only one shared i for the entire loop.
+By the time setTimeout callbacks execute (after 2 seconds), the loop has already finished.
+At that moment, i equals 3.
+So all three callbacks print the same value.
+
+We can fix with LET. 
+----------------------------
+29. Reverse a string
+----------------------------
+30. Ways to merge 2 arrays:
+
+----------------------------
+31. Explain split() and join()
+
+--------------------------
+32. Babel
+
+----------------------------
+33. undeclared vs undefined
+
+----------------------------
+34. Hoisting and which phase
+
+----------------------------
+35. console.log(b);
+let b=5;
+Ans:
+----------------------------
+36. Let vs Const
+----------------------------
+37. Promises
+----------------------------
+38. Event bubbling and capturing
+----------------------------
+39. Lexical scope:
+----------------------------
+40. First order vs higher order function
+----------------------------
+41. Map vs filter
+----------------------------
+42. Template Literal
+----------------------------
+43. Array methods used
+----------------------------
+44. 
+----------------------------
+45.
+----------------------------
+46.
+----------------------------
+47.
+----------------------------
+48.
+----------------------------
+49.
+----------------------------
+50.
+----------------------------
+
+----------------------------
+
+----------------------------
+
+----------------------------
 
 
 
