@@ -4149,12 +4149,80 @@ true < 3 → 1 < 3
 1 < 3 → true
 ----------------------------
 25. Function Currying
+Function currying is a technique where a function that normally takes multiple arguments is transformed into a sequence of functions that each take one argument at a time.
+nstead of this 👇
+fn(a, b, c)
+You write this 👇
+fn(a)(b)(c)
 
+function add(a){
+  return function(b){
+    if(b) return add(a+b);
+    return a;
+  }
+}
 ----------------------------
 26. Higher order function
+A higher-order function is a function that takes another function as an argument, returns a function, or both.
 
+Common Higher-Order Functions in JavaScript
+
+map – transforms each element of an array
+filter – selects elements based on a condition
+reduce – reduces an array to a single value
+forEach – iterates over an array with a callback
+some – checks if at least one element matches a condition
+every – checks if all elements match a condition
+find – finds the first matching element
+findIndex – finds the index of the first matching element
+flatMap – maps and flattens the result
+sort – sorts elements using a comparison function
+
+Timing & Async Higher-Order Functions
+
+setTimeout – executes a function after a delay
+setInterval – executes a function repeatedly after intervals
+requestAnimationFrame – schedules a function for the next repaint
+Promise.then – executes a function after promise resolution
+Promise.catch – handles promise errors with a callback
+Promise.finally – runs cleanup logic after promise settles
+
+Event-Based Higher-Order Functions
+
+addEventListener – runs a callback on an event
+removeEventListener – removes an event callback
+onClick / onChange / onSubmit handlers – execute functions on UI events
+
+Functional Programming / Utility HOFs
+
+curry – transforms a function into chained calls
+compose – combines multiple functions into one
+pipe – passes output of one function to the next
+debounce – delays function execution
+throttle – limits function execution rate
+memoize – caches function results
+once – ensures a function runs only once
+
+React & Frontend-Specific HOFs
+
+React.memo – memoizes a component
+Higher Order Components (HOC) – functions that wrap components
+useCallback – returns a memoized function
+useMemo – memoizes computed values using functions
+
+Custom / Conceptual Higher-Order Functions
+
+Authorization wrappers (auth guards)
+Logging wrappers
+Error handling wrappers
+Feature toggles
+API retry handlers
+Permission checks
 ----------------------------
 27. Turnarory operator( ? : )
+
+The ternary operator is a short-hand for an if-else statement. It takes three parts:
+condition ? expressionIfTrue : expressionIfFalse
 
 ----------------------------
 28. for(var i=0; i<3; i++){
@@ -4176,6 +4244,7 @@ So all three callbacks print the same value.
 We can fix with LET. 
 ----------------------------
 29. Reverse a string
+
 ----------------------------
 30. Ways to merge 2 arrays:
 
@@ -4298,6 +4367,7 @@ Ans:
 ----------------------------
 85.
 ----------------------------
+
 
 
 
