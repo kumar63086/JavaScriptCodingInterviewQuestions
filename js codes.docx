@@ -4314,12 +4314,29 @@ console.log(arr1); // [1, 2, 3, 4]
 
 ----------------------------
 31. Explain split() and join()
-
+split() converts a string into an array, and join() converts an array back into a string using a separator.
 --------------------------
 32. Babel
-
+Babel is a JavaScript compiler (transpiler) that converts modern JavaScript (ES6+) and JSX into older JavaScript (ES5) so that it runs in all browsers.
 ----------------------------
 33. undeclared vs undefined
+
+🔹 undefined in JavaScript
+👉 What it means
+
+A variable is declared but not assigned any value.
+
+👉 Example
+let a;
+console.log(a); // undefined
+
+🔹 undeclared in JavaScript
+👉 What it means
+
+A variable is never declared using var, let, or const.
+
+👉 Example
+console.log(b); // ❌ ReferenceError: b is not defined
 
 ----------------------------
 34. Hoisting and which phase
@@ -4431,6 +4448,7 @@ Ans:
 ----------------------------
 85.
 ----------------------------
+
 
 
 
