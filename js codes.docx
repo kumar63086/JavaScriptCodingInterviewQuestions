@@ -4340,15 +4340,80 @@ console.log(b); // ❌ ReferenceError: b is not defined
 
 ----------------------------
 34. Hoisting and which phase
+🔹 What is Hoisting?
 
+Hoisting is JavaScript’s behavior of moving declarations to the top of their scope during execution.
+
+⚠️ Important:
+Only declarations are hoisted, not initializations.
+
+🔹 JavaScript Phases (Very Important)
+
+JavaScript code runs in 2 phases:
+
+1️⃣ Memory Creation Phase (Hoisting Phase)
+
+Variables and functions are allocated memory
+
+Function declarations are stored completely
+
+Variables are set to undefined
+
+2️⃣ Execution Phase
+
+Code is executed line by line
+
+Variables get assigned actual values
+
+Functions are executed
+
+❌ let and const-
+👉 They are hoisted but kept in Temporal Dead Zone (TDZ)
+Cannot be accessed before initialization.
+
+🔹 What is Temporal Dead Zone (TDZ)?
+Time between variable creation and initialization where let and const cannot be accessed.
 ----------------------------
 35. console.log(b);
 let b=5;
-Ans:
+Ans: ReferenceError: Cannot access 'b' before initialization
 ----------------------------
 36. Let vs Const
+let allows reassignment while const does not, both are block-scoped and hoisted with a Temporal Dead Zone.
+
+🔹 Important Interview Traps
+❗ const with objects & arrays
+
+const does not mean immutable.
+
+const user = { name: "Priya" };
+user.name = "Riya"; // ✅ allowed
+
+
+❌ Only reassignment is blocked:
+
+user = {}; // Error
+
 ----------------------------
-37. Promises
+37. Promises:
+A Promise is an object that represents the eventual completion or failure of an asynchronous operation.
+A Promise represents a value that will be available in the future — either:
+
+✅ Resolved (success)
+
+❌ Rejected (failure)
+
+👉 Used to handle asynchronous operations like API calls, timers, file reading.
+
+A Promise has 3 states:
+
+State	Meaning
+pending	Initial state
+fulfilled	Operation successful
+rejected	Operation failed
+
+.then() is non-blocking and continues execution immediately, while await pauses the current async function until the Promise resolves.
+
 ----------------------------
 38. Event bubbling and capturing
 ----------------------------
@@ -4448,6 +4513,7 @@ Ans:
 ----------------------------
 85.
 ----------------------------
+
 
 
 
