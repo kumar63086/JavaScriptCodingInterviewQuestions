@@ -4259,6 +4259,59 @@ console.log(reversed); // olleh
 ----------------------------
 30. Ways to merge 2 arrays:
 
+1. Using concat() (Classic way)
+const arr1 = [1, 2];
+const arr2 = [3, 4];
+
+const merged = arr1.concat(arr2);
+console.log(merged); // [1, 2, 3, 4]
+
+
+📌 Does not modify original arrays.
+
+✅ 2. Using Spread Operator ... (Most used)
+const arr1 = [1, 2];
+const arr2 = [3, 4];
+
+const merged = [...arr1, ...arr2];
+console.log(merged); // [1, 2, 3, 4]
+
+
+⭐ Clean, modern, and interview-preferred.
+
+✅ 3. Using push() (Mutates first array)
+const arr1 = [1, 2];
+const arr2 = [3, 4];
+
+arr1.push(...arr2);
+console.log(arr1); // [1, 2, 3, 4]
+
+
+⚠️ Modifies arr1.
+
+✅ 4. Using for loop (No built-ins)
+const arr1 = [1, 2];
+const arr2 = [3, 4];
+
+for (let i = 0; i < arr2.length; i++) {
+  arr1.push(arr2[i]);
+}
+
+console.log(arr1); // [1, 2, 3, 4]
+
+
+👉 Best when interviewer says “don’t use built-in methods”.
+
+✅ 5. Using Array.prototype.splice()
+const arr1 = [1, 2];
+const arr2 = [3, 4];
+
+arr1.splice(arr1.length, 0, ...arr2);
+console.log(arr1); // [1, 2, 3, 4]
+
+
+⚠️ Mutates arr1.
+
 ----------------------------
 31. Explain split() and join()
 
@@ -4378,6 +4431,7 @@ Ans:
 ----------------------------
 85.
 ----------------------------
+
 
 
 
