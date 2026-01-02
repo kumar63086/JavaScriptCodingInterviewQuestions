@@ -4416,6 +4416,39 @@ rejected	Operation failed
 
 ----------------------------
 38. Event bubbling and capturing
+Event propagation is the process by which a browser decides the order in which event handlers are executed when an event occurs on a DOM element.
+There are 3 phases:
+
+1️⃣ Capturing phase (top → target) The event travels from document → target element.
+2️⃣ Target phase (actual element)
+3️⃣ Bubbling phase (target → top) The event starts at the target element and bubbles up to its parents.
+
+Controlling Capturing vs Bubbling
+
+Using addEventListener:
+
+element.addEventListener("click", handler, useCapture);
+useCapture = false (default) → Bubbling
+useCapture = true → Capturing
+
+event.stopPropagation()
+Stops the event from moving further.
+
+What is Event Delegation? (Definition)
+Event delegation is a technique where a single event listener is attached to a parent element to handle events for multiple child elements using event bubbling.
+
+event.target:
+The element that triggered the event.
+
+event.currentTarget:
+The element where the event handler is attached.
+
+Common Interview Traps
+Bubbling is default
+Capturing needs true
+stopPropagation() affects both
+Delegation uses bubbling, not capturing
+
 ----------------------------
 39. Lexical scope:
 ----------------------------
@@ -4513,6 +4546,7 @@ rejected	Operation failed
 ----------------------------
 85.
 ----------------------------
+
 
 
 
