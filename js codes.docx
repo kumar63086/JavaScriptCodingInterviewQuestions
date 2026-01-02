@@ -4451,8 +4451,36 @@ Delegation uses bubbling, not capturing
 
 ----------------------------
 39. Lexical scope:
+Lexical Scope (very simple definition)
+Lexical scope means a function can access variables that are written outside it, based on where the function is defined in the code.
+JavaScript decides scope at compile time.
+
+Lexical Scope Rule:
+Inner functions can access variables of their outer (parent) scopes,
+but outer scopes cannot access inner variables.
+
+👉 Scope depends on definition location, not call location
+
+this does NOT follow lexical scope
+
+Inner functions can access outer variables.
+Outer functions cannot access inner variables.
+
+Scope chain (Interview favorite)
+
+When JS looks for a variable:
+Check current scope
+Go to parent scope
+Go to global
+If not found → ReferenceError
+This search path is called the scope chain.
 ----------------------------
 40. First order vs higher order function
+First-order function:
+A function that does not take or return another function.
+Higher-order function:
+A function that takes another function as an argument or returns a function.
+
 ----------------------------
 41. Map vs filter
 ----------------------------
@@ -4546,6 +4574,7 @@ Delegation uses bubbling, not capturing
 ----------------------------
 85.
 ----------------------------
+
 
 
 
