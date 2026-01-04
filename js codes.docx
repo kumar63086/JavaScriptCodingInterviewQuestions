@@ -4483,13 +4483,71 @@ A function that takes another function as an argument or returns a function.
 
 ----------------------------
 41. Map vs filter
+
+📌 map()
+map() transforms every element and returns an array of the same length.
+
+📌 filter()
+filter() selects elements based on a condition and may return a smaller array.
 ----------------------------
 42. Template Literal
+to create strings in JavaScript using backticks (`) instead of quotes.
+Why do we need Template Literals?
+
+Because they make:
+String concatenation easier
+Multiline strings possible
+Dynamic values readable
+HTML strings clean & safe
 ----------------------------
 43. Array methods used
+Mutates	  Does NOT mutate
+push	map
+pop 	filter
+shift	reduce
+unshift	slice
+splice	concat
+sort	flat
 ----------------------------
 44. Examples of setTimeout and setInterval:
+setTimeout
+Executes a function once after a specified delay.
 
+setInterval
+Executes a function repeatedly at fixed intervals until cleared.
+
+Common uses of setTimeout (one-time delay)
+
+To delay an action for a few seconds (e.g., show a message later)
+To auto-hide alerts or toast messages after some time
+To redirect users after showing a success or warning message
+To delay an API call until the UI is ready
+To implement debounce (wait before executing a function)
+To postpone heavy tasks so the UI does not freeze
+To trigger animations after a short delay
+To show onboarding tooltips after page load
+To schedule a task once in the future
+To avoid task overlap using recursive timeouts
+To delay validation while user is typing
+To simulate loading behavior (fake loaders)
+
+👉 In short:
+setTimeout is used when something should happen once, after a delay.
+
+🔁 Common uses of setInterval (repeated actions)
+
+To update a digital clock
+To poll an API at regular intervals
+To auto-save user data periodically
+To run a countdown timer
+To check session or token expiration
+To refresh dashboard data
+To run background checks repeatedly
+To rotate banners or carousels
+To create blinking or flashing UI effects
+To track user activity over time
+To update game state or animations
+To monitor network or system status
 ----------------------------
 45. Which will execute first setTimeout or Promises
 ----------------------------
@@ -4574,6 +4632,7 @@ A function that takes another function as an argument or returns a function.
 ----------------------------
 85.
 ----------------------------
+
 
 
 
