@@ -4550,6 +4550,21 @@ To update game state or animations
 To monitor network or system status
 ----------------------------
 45. Which will execute first setTimeout or Promises
+Promises execute before setTimeout.
+
+Why? (Simple explanation)
+JavaScript has queues inside the Event Loop:
+Microtask Queue
+Promises (.then, catch, finally)
+async/await
+
+Macrotask (Callback) Queue
+setTimeout
+setInterval
+DOM events
+
+👉 Microtasks always run before macrotasks
+
 ----------------------------
 46. Event Loop ?
 ----------------------------
@@ -4632,6 +4647,7 @@ To monitor network or system status
 ----------------------------
 85.
 ----------------------------
+
 
 
 
