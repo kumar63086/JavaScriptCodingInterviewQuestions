@@ -4746,6 +4746,10 @@ Stateless components only receive data through props and do not manage state.
 Stateful components manage their own state and handle application logic.
 ----------------------------
 51. super keyword
+super is used in class components to call the parent class (React.Component) constructor.
+super() initializes the parent class
+
+super(props) allows access to this.props inside the constructor
 ----------------------------
 52. useState hook is synchronous or asynchronous ?
 ----------------------------
@@ -4816,6 +4820,7 @@ Stateful components manage their own state and handle application logic.
 ----------------------------
 85.
 ----------------------------
+
 
 
 
