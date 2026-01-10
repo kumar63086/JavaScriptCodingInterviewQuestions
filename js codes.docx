@@ -4646,12 +4646,104 @@ Repeats forever 🔁
 ----------------------------
 47. Shallow vd Deep Copy
 
+Shallow Copy
+
+Copies only the first level; nested objects share references.
+
+Deep Copy
+
+Creates a completely independent copy including nested objects.
+
+Ways to create a Shallow Copy
+
+Spread operator { ...obj }
+
+Object.assign()
+
+Array.slice()
+
+Array.concat()
+
+Spread [...arr]
+
+📌 These copy only one level deep.
+
+Ways to create a Deep Copy
+🔹 1. structuredClone() (BEST & modern)
+
+Handles:
+
+Nested objects
+
+Arrays
+
+Dates
+
+Maps & Sets
+
+❌ Does not copy functions
+
+🔹 2. JSON.parse(JSON.stringify(obj))
+
+⚠️ Limitations:
+
+Removes functions
+
+Loses undefined
+
+Converts Date to string
+
+📌 Still asked in interviews!
 ----------------------------
 48. Reactjs file structure
+A good React file structure separates reusable components, pages, business logic, state, and utilities for scalability and maintainability.
+
+📁 assets/
+Stores static files like images, icons, fonts, and global styles used across the app.
+
+📁 components/
+Contains reusable UI building blocks like buttons, cards, modals, headers, and footers.
+
+📁 pages/
+Holds full-screen components that represent pages and are usually linked to routes.
+
+📁 hooks/
+Contains custom React hooks to reuse logic and avoid code duplication.
+
+📁 services/
+Handles API calls and business logic, keeping UI components clean and focused.
+
+📁 utils/
+Stores helper functions and constants used across the application.
+
+📁 context/
+Manages global state using React Context such as auth, theme, or language.
+
+📁 store/
+Manages global application state using state libraries like Redux or Zustand.
+
+📁 routes/
+Centralizes routing logic including route definitions and protected routes.
+
+📄 App.jsx
+Root component that defines the app layout, routes, and wraps context providers.
+
+📄 main.jsx / index.js
+Entry point that renders the React app and attaches it to the DOM.
 ----------------------------
 49. NPM ? App.js ? index.html ?
+npm (Node Package Manager):
+A tool used to install, manage, and run JavaScript libraries and project dependencies.
+
+index.js:
+The main entry point of an application where execution starts and the app is initialized.
+
+app.js:
+Contains the core application logic such as configuration, routes, and middleware setup.
 ----------------------------
 50. Stateless vs stateful component
+Stateless components only receive data through props and do not manage state.
+Stateful components manage their own state and handle application logic.
 ----------------------------
 51. super keyword
 ----------------------------
@@ -4724,6 +4816,7 @@ Repeats forever 🔁
 ----------------------------
 85.
 ----------------------------
+
 
 
 
