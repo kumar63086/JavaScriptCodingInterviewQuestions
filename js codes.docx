@@ -4567,8 +4567,85 @@ DOM events
 
 ----------------------------
 46. Event Loop ?
+The Event Loop decides when and which task should run next in JavaScript.
+
+Why do we need the Event Loop?
+JavaScript is single-threaded (one thing at a time)
+But we still need to handle:
+API calls
+Timers (setTimeout)
+User clicks
+Promises
+
+👉 The Event Loop makes this possible without freezing the UI.
+The Event Loop continuously checks the call stack and executes microtasks first and macrotasks later when the stack is empty.
+
+
+Key components (VERY IMPORTANT)
+1️⃣ Call Stack
+
+Where JavaScript executes code
+
+One function at a time
+
+2️⃣ Web APIs (Browser)
+
+Handles async tasks like:
+
+Timers
+
+Fetch
+
+DOM events
+
+3️⃣ Task Queues
+
+There are two main queues:
+
+🔹 Microtask Queue (Higher Priority)
+
+Promises (then, catch, finally)
+
+async / await
+
+MutationObserver
+
+🔹 Macrotask Queue(Lower Priority)
+
+setTimeout
+
+setInterval
+
+DOM events
+
+setImmediate (Node)
+How the Event Loop works (step-by-step)
+
+JavaScript executes sync code in the call stack
+
+Async operations go to Web APIs
+
+When finished:
+
+Promises → Microtask Queue
+
+Timers → Macrotask Queue
+
+Event Loop checks:
+
+Is Call Stack empty?
+
+If yes:
+
+Executes all microtasks
+
+Then executes one macrotask
+
+Repeats forever 🔁
+
 ----------------------------
 47. Shallow vd Deep Copy
+
 ----------------------------
 48. Reactjs file structure
 ----------------------------
@@ -4647,6 +4724,7 @@ DOM events
 ----------------------------
 85.
 ----------------------------
+
 
 
 
